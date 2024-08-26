@@ -265,7 +265,8 @@ document.querySelector("input").addEventListener('keyup', (e) => {
         // })
         // console.log(flag);
         if (countries.filter((e) => { return e[1].toLowerCase() === i.toLowerCase() }).length >= 1) {
-            document.querySelector("input").id = 'wrong';
+            // document.querySelector("input").id = 'wrong';
+            document.querySelector("input").value = '';
         }
     }
 })
