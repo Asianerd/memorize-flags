@@ -147,7 +147,6 @@ var countries = [
     ['NR', 'Nauru'],
     ['NP', 'Nepal'],
     ['NL', 'Netherlands'],
-    ['AN', 'Netherlands Antilles'],
     ['NC', 'New Caledonia'],
     ['NZ', 'New Zealand'],
     ['NI', 'Nicaragua'],
