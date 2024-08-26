@@ -1,0 +1,55 @@
+#parent {
+    background:black;
+
+    height:100vh;
+    width:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+img {
+    display:block;
+    width:30%;
+
+    border-radius:var(--border-radius);
+}
+
+input {
+    background:var(--secondary);
+    color:white;
+
+    padding:0.2em 1ch;
+    margin:1em 0;
+
+    width:30ch;
+
+    border-collapse: collapse;
+    border-style:none;
+
+    font-size:1.5em;
+
+    border-radius:0.5em;
+}
+
+#wrong {
+    color:red;
+}
+
+h3 {
+    font-size:1em;
+
+    font-style:italic;
+
+    opacity: 0.5;
+    text-decoration: underline;
+
+    cursor:pointer;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
