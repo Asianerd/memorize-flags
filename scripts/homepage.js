@@ -240,31 +240,16 @@ var countries = [
     ['ZW', 'Zimbabwe']
 ];
 
-var currentCountry =
-[];
+var currentCountry = [];
 
 document.querySelector("input").addEventListener('keyup', (e) => {
-    // if (e.key == "Enter") {
-    //     checkAnswer();
-    // }
-
     let i = document.querySelector("input").value;
-
     document.querySelector("input").id = '';
 
     if (i.toLowerCase() == currentCountry[1].toLowerCase()) {
         progressCountry();
     } else {
-        // console.log(countries.filter((e) => { return e[1] === i }));
-        // let flag = false;
-        // countries.map((e) => {
-        //     if (e[1] == i) {
-        //         flag = true;
-        //     }
-        // })
-        // console.log(flag);
         if (countries.filter((e) => { return e[1].toLowerCase() === i.toLowerCase() }).length >= 1) {
-            // document.querySelector("input").id = 'wrong';
             document.querySelector("input").value = '';
         }
     }
@@ -274,7 +259,6 @@ function progressCountry() {
     currentCountry = countries[parseInt(Math.random() * countries.length)];
 
     document.querySelector("img").src = `https://flagcdn.com/${currentCountry[0].toLowerCase()}.svg`;
-
     document.querySelector("input").value = '';
 }
 
